@@ -18,7 +18,6 @@ import static by.cinema.services.FilmServiceImpl.getInstanceFilm;
 public class CreateFilmController extends HttpServlet {
     private final FilmMapper filmMapper = new FilmMapper();
     private final FilmService filmService = getInstanceFilm();
-    private String film;
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
